@@ -18,7 +18,8 @@ public class JSApiController {
 	@Autowired
 	private AlbumService albumService;
 
-	@RequestMapping(value = "/albums/", method = RequestMethod.GET)
+	//@RequestMapping(value = "/albums/", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ResponseEntity<List<Album>> listAllAlbum() {
 		List<Album> albums = albumService.listAllAlbums();
 		if (albums.isEmpty()) {
