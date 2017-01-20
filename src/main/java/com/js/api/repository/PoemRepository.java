@@ -1,11 +1,15 @@
 package com.js.api.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.js.api.domain.Poem;
 
 @Repository
-public interface PoemRepository extends CrudRepository<Poem, Integer> {
+public interface PoemRepository extends JpaRepository<Poem, Integer> {
+	
+	public List<Poem> findByAlbum(Integer id); 
 
 }
