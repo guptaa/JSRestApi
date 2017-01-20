@@ -1,0 +1,3 @@
+@ManyToOne(optional = false, cascade = ALL)
+	@JoinColumn(name = "FQTV_RECORD_ID", referencedColumnName = "id")
+	private FqtvRecord record;
