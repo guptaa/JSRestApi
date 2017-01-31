@@ -1,3 +1,4 @@
+
 package com.js.api;
 
 import org.springframework.boot.SpringApplication;
@@ -10,13 +11,15 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @Configuration
 @SpringBootApplication
 @EnableJpaRepositories
-public class JsRestApiApplication extends SpringBootServletInitializer {
+public class JsRestApiApplication 
+//extends SpringBootServletInitializer 
+{
 
-	 @Override
+	/* @Override
     	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
        	 return application.sources(JsRestApiApplication.class);
    	}
-	
+	*/
 	public static void main(String[] args) {
 		SpringApplication.run(JsRestApiApplication.class, args);
 	}
